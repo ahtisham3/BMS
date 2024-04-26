@@ -62,6 +62,7 @@ public function UpdateBillAfterDiscount()
         
         $customer_Id=$this->input->post('user_id');
         $billing_Id=$this->input->post('billing_Id');
+        $this->session->set_userdata('billingId', $billing_Id);
         $totalAmountInput=$this->input->post('totalAmountInput');
         $discontAmont=$this->input->post('discontAmont');
           $result=$this->BillingModel->updateTotalpayment($billing_Id,$discontAmont);
@@ -226,8 +227,8 @@ public function UpdateBillAfterDiscount()
     //when final amont reveiced
     public function updatePaymentStatus($customer_Id)
     {
-        $billid=$this->session->userdata('billing_Id');
-        print($billid);
+        $billid=$this->session->userdata('billingId');
+       
         $this->authmiddleware->checkAuth();
         $this->ServiceModel->updateServiceStatus($customer_Id);
         $this->BillingModel->ReceivedupdatePaymentStatus($customer_Id);
@@ -360,6 +361,7 @@ public function UpdateBillAfterDiscount()
     {
        
      $this->authmiddleware->checkAuth();
+   
      $pdfFilePath = 'D:/';
     $timeout = 2; // Timeout in seconds
     $startTime = time();

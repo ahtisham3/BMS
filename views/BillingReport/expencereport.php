@@ -51,7 +51,7 @@
                                         </div>
 
                                         <div class="portlet-title content-centre">
-                                    <label class="control-label col-md-1 text-sm ">Select Building</label>
+                                    <label class="control-label col-md-2 text-sm ">Select Building</label>
                                     <div class="col-md-9">
                                         <select id="building_dropdown" class="form-control" name="building_dropdown" required data-parsley-trigger="change">
                                             <option value="">Choose Building...</option>
@@ -116,7 +116,9 @@
         $('#building_dropdown').change(function() {
             dataTable.clear();
             $('#mytable').html('');
+            $('totalexpence').empty();
             var building_id = $(this).val();
+
            
             if (building_id !== '') {
                 // Make AJAX request to fetch floor details

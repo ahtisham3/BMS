@@ -246,7 +246,7 @@
         };
         html2pdf().from(invoice).set(options).save().
         then(function() {
-            var url = '<?php echo base_url('Billing/BillingInvoiceController/sendFinalBillEmail'); ?>/' + $customer_Id;
+            var url = '<?php echo base_url('finalinvoice'); ?>/' + $customer_Id;
             window.location.href = url;
         });
     }

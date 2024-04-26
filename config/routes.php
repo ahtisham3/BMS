@@ -229,6 +229,7 @@ $route['getutilityinvoice/(:any)']='Billing/billingInvoiceController/getutilitie
 $route['finalizebill']="BillingReport/BillingReportController/finalizeUtilities";
 $route['customerByBuilding/(:any)']='Customer/CustomerController/getCustomerByBuildingIdForBillingReport/$1';
 $route['receivedPayment/(:any)']= 'Billing/BillingInvoiceController/receivedPayment/$1';
+$route['finalinvoice/(:any)']= 'Billing/BillingInvoiceController/sendFinalBillEmail/$1';
 
 //billingrepots
 $route['getbillingreportdetails']='BillingReport/BillingReportController/index';

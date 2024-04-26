@@ -142,7 +142,7 @@ class BillingModel extends CI_Model
     public function updateUtilityRecDate($billid)
     {
 
-         print_r($billid);
+         
         $query = $this->second_database->query(
             "UPDATE customer_utilitiebills 
                 SET receiving_Date = CURDATE() 
