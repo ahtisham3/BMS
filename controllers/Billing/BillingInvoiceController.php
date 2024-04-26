@@ -220,7 +220,7 @@ public function UpdateBillAfterDiscount()
         $finalamont = $customerBill + $totalbillamonuts;
         $billingid = $customerdata->billing_Id;
         $this->Customer_ServicesModel->updateCustomerBill($finalamont, $billingid);
-        redirect(base_url("Billing/billingInvoiceController/getutilitiesPaymentInvoice/$customerID"));
+        redirect(base_url("getutilityinvoice/$customerID"));
          $this->BillingModel->getutilitiesBills($data);
     }
     //when final amont reveiced

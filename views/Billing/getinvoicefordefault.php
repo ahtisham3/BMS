@@ -244,12 +244,9 @@
                                                     </tfoot>
                                                 </table>
                                             </div>
+                                            
                                         </div>
-                                        <div class="thanks">Thank you!</div>
-                                        <div class="notices">
-                                            <div>NOTICE:</div>
-                                            <div class="notice">A finance charge of 1.5% will be made on unpaid balances after 30 days.</div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <!-- END EXAMPLE TABLE PORTLET-->

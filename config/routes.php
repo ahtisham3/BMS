@@ -225,6 +225,7 @@ $route['createcustomerservices']='Customer_Services/Customer_ServicesController/
 $route['initialinvoice']='Billing/billingInvoiceController/invoice';
 $rotue['InitialInvoicepdf/(:any)']='Billing/BillingInvoiceController/sendEmailWithPDF/$1';
 $route['AddUtilities/(:any)/(:any)'] = 'Billing/BillingInvoiceController/addUtilityBills/$1/$2';
+$route['getutilityinvoice/(:any)']='Billing/billingInvoiceController/getutilitiesPaymentInvoice/$1';
 $route['finalizebill']="BillingReport/BillingReportController/finalizeUtilities";
 $route['customerByBuilding/(:any)']='Customer/CustomerController/getCustomerByBuildingIdForBillingReport/$1';
 $route['receivedPayment/(:any)']= 'Billing/BillingInvoiceController/receivedPayment/$1';

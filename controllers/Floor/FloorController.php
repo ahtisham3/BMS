@@ -11,7 +11,6 @@ Class FloorController extends CI_Controller
     }
 public function index()
 {
-     
     $data['page_title'] = 'Dashboard';
     $data['user'] = $this->session->userdata('item');
     $companyid=$this->session->userdata('company');
@@ -22,7 +21,6 @@ public function index()
     $this->load->view('inc/footer');
    
 }
-
 public function dynamicFloorDeatils($id)
 {
     $data=$this->floorModel->getFloorDetailbyBuilding($id);
