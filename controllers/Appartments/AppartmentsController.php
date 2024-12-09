@@ -9,6 +9,8 @@ class AppartmentsController extends CI_Controller
     }
 
 
+
+    
     public function index()
     {   
         $this->authmiddleware->checkAuth();
